@@ -10,6 +10,8 @@ function App() {
 
   var [result, setResult] = useState("")
 
+  var [showResults, setShowResults] = useState(false)
+
   return (
 
     <div>
@@ -17,16 +19,18 @@ function App() {
       <Title />
 
       <Form
-        setResult={setResult} />
+        setResult={setResult}
+        setShowResults={setShowResults} />
 
-      <Results
+      {showResults ? <Results
         fajr={result?.Fajr}
         sunrise={result?.Sunrise}
         dhuhr={result?.Dhuhr}
         asr={result?.Asr}
         maghrib={result?.Maghrib}
         isha={result?.Isha}
-      />
+      /> : null}
+
     </div>
   )
 }

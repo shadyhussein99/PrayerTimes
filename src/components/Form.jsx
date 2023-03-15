@@ -18,17 +18,16 @@ function Form(props) {
 
     useEffect(function () {
 
-        fetch(`https://api.aladhan.com/v1/timingsByAddress/14-03-2023?address=Cairo,Egypt&method=15`)
+        fetch(`https://api.aladhan.com/v1/timingsByAddress/${day}-${month}-${year}?address=${savedCity},${savedCountry}&method=15`)
             .then(res => res.json())
             .then(res => {
-                
-                const { data } = res
-                const { timings } = data
+
+                const { timings } = res.data
 
                 props.setResult(timings)
             })
             .catch(err => console.log(err))
-    }, [])
+    }, [day, month, year, savedCity, savedCountry])
 
 
     function countryChange(event) {
@@ -42,6 +41,7 @@ function Form(props) {
     function handleClick() {
         setSavedCountry(country)
         setSavedCity(city)
+        props.setShowResults(true)
     }
 
 

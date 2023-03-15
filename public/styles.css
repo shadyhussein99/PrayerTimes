@@ -1,9 +1,16 @@
-body {
-    background-image: url(pics/mosque.jpg);
-height: 100%;
-width: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+@tailwind base;
 
+body {
+  height: 100%;
 }
+
+html {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(pics/mosque.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+@tailwind components;
+@tailwind utilities;
