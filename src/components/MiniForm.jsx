@@ -6,7 +6,7 @@ function MiniForm(props) {
     return <div>
         <form>
             <label>{props.label}</label>
-            <input onChange={props.handleChange} value={props.value} />
+            <input onChange={props.handleChange} value={props.value} className="text-black" />
         </form>
     </div>
 }
