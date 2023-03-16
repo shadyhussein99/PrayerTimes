@@ -56,8 +56,9 @@ function Form(props) {
             handleChange={cityChange}
             value={city}
         />
-        <button onClick={handleClick}>Search</button>
-
+        <div className=" flex justify-center mt-10">
+            <button onClick={handleClick} className=" text-black text-lg bg-white py-2 px-6 rounded-full">Search</button>
+        </div>
     </div>
 }
 
