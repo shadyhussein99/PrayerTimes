@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
 @tailwind base;
-
-body {
-  height: 100%;
-}
-
-html {
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(pics/mosque.jpg);
-  background-size: cover;
-  overflow: hidden;
-}
-
 @tailwind components;
 @tailwind utilities;
+
+
+body {
+  background-color: #000724;
+  background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+}
+
+.prayers {
+  @apply text-3xl mt-4 xl:text-4xl 
+}
+
+.times {
+  @apply text-xl pb-4 xl:text-2xl 
+}

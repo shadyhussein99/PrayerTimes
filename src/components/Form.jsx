@@ -57,7 +57,7 @@ function Form(props) {
             value={city}
         />
         <div className=" flex justify-center mt-10">
-            <button onClick={handleClick} className=" text-black text-lg bg-white py-2 px-6 rounded-full">Search</button>
+            <button onClick={handleClick} className=" text-darkBlue text-xl bg-white py-2 px-6 rounded-full">Search</button>
         </div>
     </div>
 }

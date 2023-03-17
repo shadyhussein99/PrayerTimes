@@ -14,7 +14,7 @@ function App() {
 
   return (
 
-    <div className='text-white'>
+    <div className='text-white font-body'>
 
       <Title />
 

@@ -10,7 +10,17 @@ module.exports = {
     "./src/components/Title.jsx",
   ],
   theme: {
-    extend: {},
+
+    extend: {
+
+      fontFamily: {
+        "body": ["Noto Serif"]
+      },
+
+      colors: {
+        "darkBlue": "#000724"
+      }
+    }
   },
   plugins: [],
 }
