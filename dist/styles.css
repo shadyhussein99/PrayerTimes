@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+
+body {
+  background-color: #000724;
+  background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+}
+
+.prayers {
+  @apply text-3xl mt-4 xl:text-4xl 
+}
+
+.times {
+  @apply text-xl pb-4 xl:text-2xl 
+}
