@@ -1,5 +1,5 @@
 # PrayerTimes
-App to get current prayer times wherever you are
+Get the current prayer times wherever you are, fetching real live data using RESTful API
 
 # Installation
 To run the chrome extention locally, use the following commands
