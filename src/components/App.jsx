@@ -9,12 +9,11 @@ import Results from './Results'
 function App() {
 
   var [result, setResult] = useState("")
-
   var [showResults, setShowResults] = useState(false)
 
   return (
 
-    <div className='text-white font-body'>
+    <main className='text-white font-body'>
 
       <Title />
 
@@ -31,7 +30,7 @@ function App() {
         isha={result?.Isha}
       /> : null}
 
-    </div>
+    </main>
   )
 }
 

@@ -45,7 +45,7 @@ function Form(props) {
     }
 
 
-    return <div>
+    return <section>
         <MiniForm
             label="Country"
             handleChange={countryChange}
@@ -56,10 +56,10 @@ function Form(props) {
             handleChange={cityChange}
             value={city}
         />
-        <div className=" flex justify-center mt-10">
+        <section className=" flex justify-center mt-10">
             <button onClick={handleClick} className=" text-darkBlue text-xl bg-white py-2 px-6 rounded-full">Search</button>
-        </div>
-    </div>
+        </section>
+    </section>
 }
 
 export default Form
